@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Modules documentation &mdash; Python Modules  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Python Modules
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Python Modules documentation</a></li>
+<li><a class="reference internal" href="#module-modules.datetime.date">Date</a><ul>
+<li><a class="reference internal" href="#modules.datetime.date.Date"><code class="docutils literal notranslate"><span class="pre">Date</span></code></a><ul>
+<li><a class="reference internal" href="#modules.datetime.date.Date.get_day_month"><code class="docutils literal notranslate"><span class="pre">Date.get_day_month()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.get_month_day"><code class="docutils literal notranslate"><span class="pre">Date.get_month_day()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.get_month_year"><code class="docutils literal notranslate"><span class="pre">Date.get_month_year()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.get_year_month"><code class="docutils literal notranslate"><span class="pre">Date.get_year_month()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.get_yymm"><code class="docutils literal notranslate"><span class="pre">Date.get_yymm()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.get_yymmdd"><code class="docutils literal notranslate"><span class="pre">Date.get_yymmdd()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.set_current_date"><code class="docutils literal notranslate"><span class="pre">Date.set_current_date()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.set_day"><code class="docutils literal notranslate"><span class="pre">Date.set_day()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.set_month"><code class="docutils literal notranslate"><span class="pre">Date.set_month()</span></code></a></li>
+<li><a class="reference internal" href="#modules.datetime.date.Date.set_year"><code class="docutils literal notranslate"><span class="pre">Date.set_year()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-modules.errors.error_handler">ErrorHandler</a><ul>
+<li><a class="reference internal" href="#modules.errors.error_handler.ErrorHandler"><code class="docutils literal notranslate"><span class="pre">ErrorHandler</span></code></a><ul>
+<li><a class="reference internal" href="#modules.errors.error_handler.ErrorHandler.error_str"><code class="docutils literal notranslate"><span class="pre">ErrorHandler.error_str</span></code></a></li>
+<li><a class="reference internal" href="#modules.errors.error_handler.ErrorHandler.log_error"><code class="docutils literal notranslate"><span class="pre">ErrorHandler.log_error()</span></code></a></li>
+<li><a class="reference internal" href="#modules.errors.error_handler.ErrorHandler.log_error_no_exception"><code class="docutils literal notranslate"><span class="pre">ErrorHandler.log_error_no_exception()</span></code></a></li>
+<li><a class="reference internal" href="#modules.errors.error_handler.ErrorHandler.print_errors"><code class="docutils literal notranslate"><span class="pre">ErrorHandler.print_errors()</span></code></a></li>
+<li><a class="reference internal" href="#modules.errors.error_handler.ErrorHandler.reset"><code class="docutils literal notranslate"><span class="pre">ErrorHandler.reset()</span></code></a></li>
+<li><a class="reference internal" href="#modules.errors.error_handler.ErrorHandler.save_errors_to_file"><code class="docutils literal notranslate"><span class="pre">ErrorHandler.save_errors_to_file()</span></code></a></li>
+<li><a class="reference internal" href="#modules.errors.error_handler.ErrorHandler.to_s"><code class="docutils literal notranslate"><span class="pre">ErrorHandler.to_s()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Python Modules</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Python Modules documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="python-modules-documentation">
+<h1>Python Modules documentation<a class="headerlink" href="#python-modules-documentation" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="module-modules.datetime.date">
+<span id="date"></span><h1>Date<a class="headerlink" href="#module-modules.datetime.date" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="modules.datetime.date.Date">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modules.datetime.date.</span></span><span class="sig-name descname"><span class="pre">Date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">day</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">month</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">year</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.datetime.date.Date" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class describes a date.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.get_day_month">
+<span class="sig-name descname"><span class="pre">get_day_month</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#modules.datetime.date.Date.get_day_month" title="Link to this definition"></a></dt>
+<dd><p>Gets the day month. (5 December)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The day month.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.get_month_day">
+<span class="sig-name descname"><span class="pre">get_month_day</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#modules.datetime.date.Date.get_month_day" title="Link to this definition"></a></dt>
+<dd><p>Gets the month day. (December 5)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The month day.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.get_month_year">
+<span class="sig-name descname"><span class="pre">get_month_year</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#modules.datetime.date.Date.get_month_year" title="Link to this definition"></a></dt>
+<dd><p>Gets the month year. (December 2024)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The month year.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.get_year_month">
+<span class="sig-name descname"><span class="pre">get_year_month</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#modules.datetime.date.Date.get_year_month" title="Link to this definition"></a></dt>
+<dd><p>Gets the year month. (2024 December)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The year month.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.get_yymm">
+<span class="sig-name descname"><span class="pre">get_yymm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#modules.datetime.date.Date.get_yymm" title="Link to this definition"></a></dt>
+<dd><p>Gets the yymm. (YYYY-MM)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The yymm.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.get_yymmdd">
+<span class="sig-name descname"><span class="pre">get_yymmdd</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#modules.datetime.date.Date.get_yymmdd" title="Link to this definition"></a></dt>
+<dd><p>Gets the yymmdd. (YYYY-MM-DD)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The yymmdd.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.set_current_date">
+<span class="sig-name descname"><span class="pre">set_current_date</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.datetime.date.Date.set_current_date" title="Link to this definition"></a></dt>
+<dd><p>Sets the date to the current date.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.set_day">
+<span class="sig-name descname"><span class="pre">set_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">day</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.datetime.date.Date.set_day" title="Link to this definition"></a></dt>
+<dd><p>Sets the day.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>day</strong> (<em>int</em><em> or </em><em>str</em>) – The new value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.set_month">
+<span class="sig-name descname"><span class="pre">set_month</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">month</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.datetime.date.Date.set_month" title="Link to this definition"></a></dt>
+<dd><p>Sets the month.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>month</strong> (<em>int</em><em> or </em><em>str</em>) – The month</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.datetime.date.Date.set_year">
+<span class="sig-name descname"><span class="pre">set_year</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">year</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.datetime.date.Date.set_year" title="Link to this definition"></a></dt>
+<dd><p>Sets the year.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>year</strong> (<em>int</em><em> or </em><em>str</em>) – The year</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modules.errors.error_handler">
+<span id="errorhandler"></span><h1>ErrorHandler<a class="headerlink" href="#module-modules.errors.error_handler" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="modules.errors.error_handler.ErrorHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modules.errors.error_handler.</span></span><span class="sig-name descname"><span class="pre">ErrorHandler</span></span><a class="headerlink" href="#modules.errors.error_handler.ErrorHandler" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class describes an error handler.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modules.errors.error_handler.ErrorHandler.error_str">
+<span class="sig-name descname"><span class="pre">error_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#modules.errors.error_handler.ErrorHandler.error_str" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.errors.error_handler.ErrorHandler.log_error">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error_message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exception</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Exception</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.errors.error_handler.ErrorHandler.log_error" title="Link to this definition"></a></dt>
+<dd><p>Logs an error.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cls</strong> (<a class="reference internal" href="#modules.errors.error_handler.ErrorHandler" title="modules.errors.error_handler.ErrorHandler"><em>ErrorHandler</em></a>) – The cls</p></li>
+<li><p><strong>error_message</strong> (<em>str</em>) – The error message</p></li>
+<li><p><strong>exception</strong> (<em>Exception</em>) – The exception</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.errors.error_handler.ErrorHandler.log_error_no_exception">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_error_no_exception</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error_message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.errors.error_handler.ErrorHandler.log_error_no_exception" title="Link to this definition"></a></dt>
+<dd><p>Logs an error that did not cause an exception.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cls</strong> (<a class="reference internal" href="#modules.errors.error_handler.ErrorHandler" title="modules.errors.error_handler.ErrorHandler"><em>ErrorHandler</em></a>) – The cls</p></li>
+<li><p><strong>error_message</strong> (<em>str</em>) – The error message</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.errors.error_handler.ErrorHandler.print_errors">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">print_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.errors.error_handler.ErrorHandler.print_errors" title="Link to this definition"></a></dt>
+<dd><p>Prints errors in the terminal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cls</strong> (<a class="reference internal" href="#modules.errors.error_handler.ErrorHandler" title="modules.errors.error_handler.ErrorHandler"><em>ErrorHandler</em></a>) – The cls</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.errors.error_handler.ErrorHandler.reset">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modules.errors.error_handler.ErrorHandler.reset" title="Link to this definition"></a></dt>
+<dd><p>Reset the error handler to empty the log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cls</strong> (<a class="reference internal" href="#modules.errors.error_handler.ErrorHandler" title="modules.errors.error_handler.ErrorHandler"><em>ErrorHandler</em></a>) – The cls</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.errors.error_handler.ErrorHandler.save_errors_to_file">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_errors_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modules.errors.error_handler.ErrorHandler.save_errors_to_file" title="Link to this definition"></a></dt>
+<dd><p>Saves an errors to file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cls</strong> (<a class="reference internal" href="#modules.errors.error_handler.ErrorHandler" title="modules.errors.error_handler.ErrorHandler"><em>ErrorHandler</em></a>) – The cls</p></li>
+<li><p><strong>file_path</strong> (<em>str</em>) – The file path</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modules.errors.error_handler.ErrorHandler.to_s">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">to_s</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#modules.errors.error_handler.ErrorHandler.to_s" title="Link to this definition"></a></dt>
+<dd><p>Returns a string with the error.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cls</strong> (<a class="reference internal" href="#modules.errors.error_handler.ErrorHandler" title="modules.errors.error_handler.ErrorHandler"><em>ErrorHandler</em></a>) – The cls</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>String representation of the error.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Adrian Epifanio.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
