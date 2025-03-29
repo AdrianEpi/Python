@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#   @Proyect:            Personal
+#   @Proyect:            Python Modules
 #   @Author:             Adrian Epifanio
 #   @File:               file_manager.py
 #   @Author:             Adrian Epifanio
@@ -7,9 +7,9 @@
 #   @Email:              adrianepi@gmail.com
 #   @GitHub:             https://github.com/AdrianEpi
 #   @Last Modified by:   Adrian Epifanio
-#   @Last Modified time: 2025-03-29 09:12:34
+#   @Last Modified time: 2025-03-29 09:45:52
 #   @Description:        This file describes a file manager. Contains all 
-#                        the necessary methods to work with files and directories.
+#                        the necessary methods to work with files.
 
 
 import os
@@ -19,7 +19,7 @@ import shutil
 class FileManager:
 	"""
 	This class describes a file manager, it cotains all the static methods
-	needed to work with files, folders and directories.
+	needed to work with files.
 	"""
 
 
