@@ -7,12 +7,17 @@
 #   @Email:              adrianepi@gmail.com
 #   @GitHub:             https://github.com/AdrianEpi
 #   @Last Modified by:   Adrian Epifanio
-#   @Last Modified time: 2025-03-29 09:45:45
+#   @Last Modified time: 2025-03-29 10:24:16
 #   @Description:        This file describes a directory manager. Contains all
 #                        the necessary methods to work with directories in the OS.
 
+import os
+import shutil
 
 class DirManager:
+	"""
+	This class describes a directory manager for the OS.
+	"""
 
 	@staticmethod
 	def list_dirs(path: str) -> list:
@@ -71,44 +76,39 @@ class DirManager:
 		:returns:   The list of files
 		:rtype:     list
 		"""
-		files = FileManager.list_files(path, extension)
-		dirs = FileManager.list_dirs(path)
+		files = DirManager.list_files(path, extension)
+		dirs = DirManager.list_dirs(path)
 		for d in dirs:
-			files += FileManager.list_all_files_recursive(path=os.path.join(path, d), extension=extension)
+			files += DirManager.list_all_files_recursive(path=os.path.join(path, d), extension=extension)
 		return files
 		
 
 	@staticmethod
-	def dir_exist(f_name: str) -> bool:
+	def dir_exist(path: str) -> bool:
 		"""
 		Checks if a dir exists or not
 
-		:param      f_name:  The file name
-		:type       f_name:  str
+		:param      path:  The file name
+		:type       path:  str
 
 		:returns:   True if the dir exsits, false otherwise
 		:rtype:     bool
 		"""
-		return os.path.isdir(f_name)
+		return os.path.isdir(path)
 
 
 	@staticmethod
-	def create_dir(f_name: str, path=''):
+	def create_dir(path=''):
 		"""
 		Creates a dir.
 		
-		:param      f_name:  The dir name
-		:type       f_name:  str
 		:param      path:    The path
 		:type       path:    str
 		"""
 		try:
-			os.makedirs(path + f_name)
-		except FileExistsError:
-			pass # There is no problem is the file already exists
+			os.makedirs(path)
 		except Exception as e:
-			error = f"Error while creating dir '{f_name}': {e}"
-			ErrorHandler.log_error(error, e)
+			return f"Error while creating dir '{path}': {e}"
 
 
 	@staticmethod
@@ -120,18 +120,18 @@ class DirManager:
 		elements in data will be a father of all the next elements of type list in
 		data.
 		Example [A, B, C]
-			A
+			∟	A
 			∟	B
-				∟	C
+			∟	C
 		Example [[A, B], X, Y, Z]:
 			A
-			∟	X
+				∟	X
 				∟	Y
-					∟	Z
+				∟	Z
 			B
-			∟	X
+				∟	X
 				∟	Y
-					∟	Z
+				∟	Z
 		:param      data:  The the hierarchy list of directory names.
 		:type       data:  list
 		:param      path:  The path
@@ -143,14 +143,14 @@ class DirManager:
 		path_list = []
 		for i in range(0, len(data), 1):
 			if type(data[i]) == list:
-				path_l = FileManager.create_dir_hierarchy(data = data[i], path = path)
+				path_l = DirManager.create_dir_hierarchy(data = data[i], path = path)
 				for j in path_l:
-					FileManager.create_dir_hierarchy(data = data[i + 1:], path = j)
+					DirManager.create_dir_hierarchy(data = data[i + 1:], path = j)
 				break
-			elif FileManager.dir_exist(path):
+			elif DirManager.dir_exist(path):
 				new_path = path + '/' + data[i]
-				if(not FileManager.dir_exist(new_path)):
-					FileManager.create_dir(f_name = new_path)
+				if(not DirManager.dir_exist(new_path)):
+					DirManager.create_dir(path = new_path)
 					path_list.append(new_path)
 		return path_list
 
@@ -163,7 +163,7 @@ class DirManager:
 		:param      path:  The path
 		:type       path:  str
 		"""
-		if FileManager.dir_exist(path):
+		if DirManager.dir_exist(path):
 			shutil.rmtree(path)
 
 

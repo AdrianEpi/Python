@@ -20,9 +20,3 @@ coverage run -m pytest
 coverage report
 coverage html
 ```
-
-## Sphinx
-
-```sh
-sphinx-quickstart
-```
