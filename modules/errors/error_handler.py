@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#   @Proyect:            Personal
+#   @Proyect:            Python Modules
 #   @Author:             Adrian Epifanio
 #   @File:               error_handler.py
 #   @Author:             Adrian Epifanio
@@ -7,7 +7,7 @@
 #   @Email:              adrianepi@gmail.com
 #   @GitHub:             https://github.com/AdrianEpi
 #   @Last Modified by:   Adrian Epifanio
-#   @Last Modified time: 2025-03-29 08:25:00
+#   @Last Modified time: 2025-03-29 09:46:13
 #   @Description:        This file describes an ErrorHandler
 
 

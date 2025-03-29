@@ -7,11 +7,11 @@
 #   @Email:              adrianepi@gmail.com
 #   @GitHub:             https://github.com/AdrianEpi
 #   @Last Modified by:   Adrian Epifanio
-#   @Last Modified time: 2025-03-29 09:12:42
-#   @Description:        Tests for modules/files/file_manager.py
+#   @Last Modified time: 2025-03-29 09:51:00
+#   @Description:        Tests for modules/filesystem/file_manager.py
 
 
-from modules.files.file_manager import FileManager
+from modules.filesystem.file_manager import FileManager
 
 import pytest
 

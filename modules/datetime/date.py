@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#   @Proyect:            Python
+#   @Proyect:            Python Modules
 #   @Author:             Adrian Epifanio
 #   @File:               date.py
 #   @Author:             Adrian Epifanio
@@ -7,7 +7,7 @@
 #   @Email:              adrianepi@gmail.com
 #   @GitHub:             https://github.com/AdrianEpi
 #   @Last Modified by:   Adrian Epifanio
-#   @Last Modified time: 2025-03-28 17:26:05
+#   @Last Modified time: 2025-03-29 09:46:34
 #   @Description:        This file describes a Date class
 
 
