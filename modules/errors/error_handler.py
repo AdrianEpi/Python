@@ -7,7 +7,7 @@
 #   @Email:              adrianepi@gmail.com
 #   @GitHub:             https://github.com/AdrianEpi
 #   @Last Modified by:   Adrian Epifanio
-#   @Last Modified time: 2025-03-28 17:13:33
+#   @Last Modified time: 2025-03-29 08:25:00
 #   @Description:        This file describes an ErrorHandler
 
 
@@ -21,20 +21,21 @@ class ErrorHandler:
 	error_str = ''
 
 	@classmethod
-	def log_error(cls, error_message: str, exception: Exception):
+	def log_error(cls, error_message, exception: Exception):
 		"""
 		Logs an error.
 		
 		:param      cls:            The cls
 		:type       cls:            ErrorHandler
 		:param      error_message:  The error message
-		:type       error_message:  str
+		:type       error_message:  str / None
 		:param      exception:      The exception
 		:type       exception:      Exception
 		"""
-		error_type = type(exception).__name__
-		cls.error_str += f'\n\n{datetime.now()}: {error_message} - {error_type}\n'
-		cls.error_str += f'{traceback.format_exc()}\n'
+		if error_message != None and error_message != '':
+			error_type = type(exception).__name__
+			cls.error_str += f'\n\n{datetime.now()}: {error_message} - {error_type}\n'
+			cls.error_str += f'{traceback.format_exc()}\n'
 
 
 	@classmethod

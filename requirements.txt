@@ -4,4 +4,5 @@ sphinx>=8.1.3					# Documentation
 sphinx-rtd-theme>=3.0.2 		# Github Pages Documentation
 
 -r modules/datetime/requirements.txt
+-r modules/files/requirements.txt
 -r modules/errors/requirements.txt
