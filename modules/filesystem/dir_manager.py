@@ -91,7 +91,7 @@ class DirManager:
 		:param      path:  The file name
 		:type       path:  str
 
-		:returns:   True if the dir exsits, false otherwise
+		:returns:   True if the dir exists, false otherwise
 		:rtype:     bool
 		"""
 		return os.path.isdir(path)
