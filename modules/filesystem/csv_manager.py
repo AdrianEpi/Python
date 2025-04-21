@@ -7,7 +7,7 @@
 #   @Email:              adrianepi@gmail.com
 #   @GitHub:             https://github.com/AdrianEpi
 #   @Last Modified by:   Adrian Epifanio
-#   @Last Modified time: 2025-04-17 10:04:30
+#   @Last Modified time: 2025-04-21 12:06:54
 #   @Description:        This file describes a csv manager. Contains all 
 #                        the necessary methods to work with csv, create
 #                        csv, read and transform it to other formats.
@@ -111,3 +111,29 @@ class CsvManager:
 		:type       columns:  list
 		"""
 		CsvManager.df_to_csv(path = path, df = pd.DataFrame(rows, columns = columns), header = columns)
+
+
+	@staticmethod
+	def xlsx_to_df(path: str, sheet = 0) -> pd.DataFrame:
+		"""
+		Reads a xlsx sheet, if non sheet name is provided it will generate it
+		from the first sheet.
+		
+		:param      path:   The path
+		:type       path:   str
+		:param      sheet:  The sheet
+		:type       sheet:  int
+		
+		:returns:   Dataframe with the data in the xlsx sheet
+		:rtype:     pd.DataFrame
+		"""
+		return pd.read_excel(path, sheet_name=sheet)
+
+
+	@staticmethod
+	def dict_to_xlsx(data: dict, path: str, index = False):
+		try:
+			df = pd.DataFrame(data)
+			df.to_excel(path, index = index)
+		except Exception as e:
+			return f'Error while converting dictionary to xlsx file.\nData:{data} \nError: {e}'

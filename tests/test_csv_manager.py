@@ -7,7 +7,7 @@
 #   @Email:              adrianepi@gmail.com
 #   @GitHub:             https://github.com/AdrianEpi
 #   @Last Modified by:   Adrian Epifanio
-#   @Last Modified time: 2025-04-17 10:15:31
+#   @Last Modified time: 2025-04-21 12:09:44
 #   @Description:        Test modules/filesystem/csv_manager.py
 
 from modules.filesystem.csv_manager import CsvManager
@@ -23,8 +23,10 @@ def test_csv_to_df():
 def test_csvs_from_dir_to_df_dict():
 	assert(len(CsvManager.csvs_from_dir_to_df_dict(path='tests/tmp_csv/')) == 2)
 
+
 def test_csv_to_dict():
 	assert(len(CsvManager.csv_to_dict(path='tests/tmp_csv/sample.csv')) == 3)
+
 
 def test_df_to_csv():
 	df = pd.DataFrame({'A': [1]})
@@ -34,6 +36,7 @@ def test_df_to_csv():
 	CsvManager.df_to_csv(path='tests/tmp_csv/sample_2.csv', df=df2, sep=',')
 	assert(len(CsvManager.csv_to_dict(path='tests/tmp_csv/sample_2.csv')) == 3)
 
+
 def test_data_to_csv():
 	rows = ['A']
 	columns = [1]
@@ -42,3 +45,14 @@ def test_data_to_csv():
 	df2 = pd.DataFrame(CsvManager.csv_to_dict(path='tests/tmp_csv/sample.csv'))
 	CsvManager.df_to_csv(path='tests/tmp_csv/sample_2.csv', df=df2, sep=',')
 	assert(len(CsvManager.csv_to_dict(path='tests/tmp_csv/sample_2.csv')) == 3)
+
+
+def test_dict_to_xlsx():
+	data = {
+		'Nombre': ['Ana', 'Luis', 'Carlos', 'Marta'],
+		'Edad': [28, 34, 45, 25],
+		'Ciudad': ['Madrid', 'Barcelona', 'Valencia', 'Sevilla']
+	}
+	CsvManager.dict_to_xlsx(data=data, path='tests/tmp_csv/sample.xlsx')
+	df = CsvManager.xlsx_to_df(path='tests/tmp_csv/sample.xlsx')
+	assert(df.empty == False)
